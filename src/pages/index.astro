@@ -1,81 +1,87 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import MainLayout from "../layouts/MainLayout.astro";
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
+<MainLayout title="Encanto Serrano">
+	<main class="h-screen">
+		<header
+			class="w-full h-32 rounded-b-md"
+			style="background-color: #ABC270;"
+		>
+			<img
+				class="w-3/4 h-full m-auto"
+				src="logo.png"
+				alt="logo de encanto serrano"
 			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
-	</main>
-</Layout>
+		</header>
+		<h1 class="font-permanent text-center font-normal text-4xl my-10">
+			A donde vamos?
+		</h1>
 
-<style>
-	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
-	}
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		border: 1px solid rgba(var(--accent), 25%);
-		background-color: white;
-		padding: 1rem;
-		border-radius: 0.4rem;
-	}
-	.instructions code {
-		font-size: 0.875em;
-		font-weight: bold;
-		background: rgba(var(--accent), 12%);
-		color: rgb(var(--accent));
-		border-radius: 4px;
-		padding: 0.3em 0.45em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
-</style>
+		<section>
+			<ul class="flex flex-col gap-8">
+				<li
+					class="w-56 h-20"
+					style="background-color: #abc270; border-radius: 20px; margin: 0 auto;"
+				>
+					<a
+						class="cursor-pointer w-full h-full inline-flex justify-center items-center gap-7"
+						href="/comer/"
+					>
+						<i class="fa-solid fa-utensils text-4xl"></i>
+
+						<h2 class="uppercase font-sans font-bold text-2xl">
+							A comer
+						</h2>
+					</a>
+				</li>
+				<li
+					class="w-56 h-20"
+					style="background-color: #abc270; border-radius: 20px; margin: 0 auto;"
+				>
+					<a
+						class="cursor-pointer w-full h-full inline-flex justify-center items-center gap-7"
+						href="/pasear/"
+					>
+						<i class="fa-sharp fa-solid fa-person-hiking text-4xl"
+						></i>
+
+						<h2 class="uppercase font-sans font-bold text-2xl">
+							A pasear
+						</h2>
+					</a>
+				</li>
+				<li
+					class="w-56 h-20"
+					style="background-color: #abc270; border-radius: 20px; margin: 0 auto;"
+				>
+					<a
+						class="cursor-pointer w-full h-full inline-flex justify-center items-center gap-4"
+						href="/comprar/"
+					>
+						<i class="fa-solid fa-shop text-3xl"></i>
+
+						<h2 class="uppercase font-sans font-bold text-2xl">
+							A comprar
+						</h2>
+					</a>
+				</li>
+			</ul>
+			<div
+				class="w-72 h-12 mt-20 mb-8"
+				style="background-color: #FEC868; border-radius: 20px; margin: 0 auto;"
+			>
+				<a
+					class="cursor-pointer w-full h-full inline-flex justify-center items-center gap-7"
+					href="/comer/"
+				>
+				<i class="fa-solid fa-phone-volume text-4xl"></i>
+
+					<h2 class="uppercase font-sans font-bold text-2xl">
+						A comer
+					</h2>
+				</a>
+			</div>
+		</section>
+	</main>
+</MainLayout>
