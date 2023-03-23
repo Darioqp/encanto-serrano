@@ -3,7 +3,7 @@ import MainLayout from "../layouts/MainLayout.astro";
 ---
 
 <MainLayout title="Encanto Serrano">
-	<main class="h-screen">
+	<main class="h-screen overflow-hidden">
 		<header
 			class="w-full h-32 rounded-b-md"
 			style="background-color: #ABC270;"
@@ -15,11 +15,11 @@ import MainLayout from "../layouts/MainLayout.astro";
 			/>
 		</header>
 		<h1 class="font-permanent text-center font-normal text-4xl my-10">
-			A donde vamos?
+			¿A donde vamos?
 		</h1>
 
-		<section>
-			<ul class="flex flex-col gap-8">
+		<section class="pb-8">
+			<ul class="flex flex-col gap-8 pb-10">
 				<li
 					class="w-56 h-20"
 					style="background-color: #abc270; border-radius: 20px; margin: 0 auto;"
@@ -68,17 +68,17 @@ import MainLayout from "../layouts/MainLayout.astro";
 				</li>
 			</ul>
 			<div
-				class="w-72 h-12 mt-20 mb-8"
+				class="w-72 h-12"
 				style="background-color: #FEC868; border-radius: 20px; margin: 0 auto;"
 			>
 				<a
 					class="cursor-pointer w-full h-full inline-flex justify-center items-center gap-7"
-					href="/comer/"
+					href="/emergencia/"
 				>
-				<i class="fa-solid fa-phone-volume text-4xl"></i>
+					<i class="fa-solid fa-phone-volume text-2xl"></i>
 
-					<h2 class="uppercase font-sans font-bold text-2xl">
-						A comer
+					<h2 class="uppercase font-sans font-bold text-base">
+						Servicios de Emergencia
 					</h2>
 				</a>
 			</div>
