@@ -1,22 +1,57 @@
 ---
-import MainLayout from '../layouts/MainLayout.astro'
+import MainLayout from "../layouts/MainLayout.astro";
 ---
 
 <MainLayout title="Encanto Serrano - Emergencia">
-    <h1 class="uppercase text-4xl font-sans text-center my-10 leading-normal font-bold">Servicios <br> de emergencia</h1>
-    <div class="w-3/4 mx-auto rounded-lg py-2" style="background-color: #FEC868;">
-        <p class="uppercase text-black font-bold py-3 text-center text-xl">policia 101</p>
-        <p class="uppercase text-black font-bold py-3 text-center text-xl">bomberos 100</p>
-    </div>
+    <main class="mx-auto">
+        <h1
+            class="uppercase text-4xl font-sans text-center my-10 leading-normal font-bold"
+        >
+            Servicios <br /> de emergencia
+        </h1>
+        <div
+            class="w-3/4 sm:w-1/2 mx-auto rounded-lg py-2"
+            style="background-color: #FEC868;"
+        >
+            <p class="uppercase text-black font-bold py-3 text-center text-xl">
+                policia 101
+            </p>
+            <p class="uppercase text-black font-bold py-3 text-center text-xl">
+                bomberos 100
+            </p>
+        </div>
 
-    <div class="w-3/4 mx-auto rounded-lg py-2 mt-6" style="background-color: #FEC868;">
-        <p class="uppercase text-black font-bold py-3 text-center text-xl">dispensario <br> salsipuedes</p>
-        <p class="uppercase text-black font-bold py-3 text-center text-xl">(3543) 492087</p>
-        <p class="uppercase text-black font-bold py-3 text-center text-xl"><a class="hover:text-gray-600" href="https://goo.gl/maps/9SGymbgcF8jivWhd6">ver ubicación</a></p>
-    </div>
+        <div
+            class="w-3/4 sm:w-1/2 mx-auto rounded-lg py-2 mt-6"
+            style="background-color: #FEC868;"
+        >
+            <p class="uppercase text-black font-bold py-3 text-center text-xl">
+                dispensario <br /> salsipuedes
+            </p>
+            <p class="uppercase text-black font-bold py-3 text-center text-xl">
+                (3543) 492087
+            </p>
+            <p class="uppercase text-black font-bold py-3 text-center text-xl">
+                <a
+                    class="hover:text-gray-600"
+                    href="https://goo.gl/maps/9SGymbgcF8jivWhd6"
+                    >ver ubicación</a>
+            </p>
+        </div>
 
-    <footer class="w-full h-24 mt-14 flex items-center rounded-t-lg" style="background-color: #FDA769;">
-        <a class="flex justify-center items-center gap-10 mx-auto" href="/"><i class="fa-solid fa-chevron-left text-white text-3xl cursor-pointer"></i><p class="text-center font-sans text-2xl uppercase font-bold">Volver al inicio</p></a>
-        
-    </footer>
+        <footer
+            class="w-full h-24 mt-14 flex items-center rounded-t-lg"
+            style="background-color: #FDA769;"
+        >
+            <a class="flex justify-center items-center gap-10 mx-auto" href="/"
+                ><i
+                    class="fa-solid fa-chevron-left text-white text-3xl cursor-pointer"
+                ></i><p
+                    class="text-center font-sans text-2xl uppercase font-bold"
+                >
+                    Volver al inicio
+                </p></a
+            >
+        </footer>
+    </main>
 </MainLayout>
