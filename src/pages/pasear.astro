@@ -1,5 +1,7 @@
 ---
 import SecondaryLayout from "../layouts/SecondaryLayout.astro";
+import ListItem from "../components/ListItem.astro";
+import Titulo from "../components/Titulo.astro";
 ---
 
 <SecondaryLayout title="Encanto Serrano - Comer">
@@ -7,7 +9,17 @@ import SecondaryLayout from "../layouts/SecondaryLayout.astro";
         <i class="fa-solid fa-person-hiking text-6xl" style="color: #FDA769"></i>
         <h2 class="text-4xl font-bold uppercase font-sans">A pasear</h2>
     </div>
-    <div>
-        <h2 class="text-center font-permanent text-3xl py-2">Naturaleza y ríos</h2>
-    </div>
+    <Titulo title="naturaleza y ríos"/>
+    <ListItem title="salto la estancita - salsi" href="https://www.cordobaturismo.gov.ar/experiencia/salsipuedes-cascada-de-la-estancita/"/>
+    <ListItem title="dique la quebrada - rc" href="https://goo.gl/maps/uMTmomiNyJpTkzRi8"/>
+    <ListItem title="cascada los hornillos - rc" href="https://www.cordobaturismo.gov.ar/experiencia/rio-ceballos-los-hornillos/"/>
+    <ListItem title="las 3 cascadas - ascochinga" href="https://goo.gl/maps/wu5Sr6qXFnWm7xeP7"/>
+    <ListItem title="cerro azul" href="https://goo.gl/maps/gKNGm7uQPz1VTC6g8"/>
+    <ListItem title="balneario agua de oro" href="https://goo.gl/maps/bd5sEdc45NuaQK7z6"/>
+    <ListItem title="senderos de cordoba" href="https://www.cordobaturismo.gov.ar/cosa_para_hacer/senderos-de-cordoba/"/>
+    <ListItem title="recorridos en auto" href="https://www.cordobaturismo.gov.ar/cosa_para_hacer/rutas-escenicas-de-cordoba/"/>
+    <ListItem title="conocer sierras chicas" href="https://www.cordobaturismo.gov.ar/region/sierras-chicas/"/>
+
+
+
 </SecondaryLayout>
