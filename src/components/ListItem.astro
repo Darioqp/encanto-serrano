@@ -1,20 +1,22 @@
 ---
 export interface Props {
-	title: string;
-	href: string;
+    title: string;
+    href: string;
 }
 
-const { href, title} = Astro.props;
+const { href, title } = Astro.props;
 ---
-<div class="w-11/12 sm:w-3/5 h-10 bg-gray-200 rounded-lg my-4 shadow-sm mx-auto flex items-center justify-center">
+
+<a
+    href={href}
+    class="w-11/12 sm:w-3/5 h-10 bg-gray-200 rounded-lg my-4 shadow-sm mx-auto flex items-center justify-center"
+>
     <ul>
         <li>
-            <a href={href}>
-                <h2 class="uppercase font-sans text-xl font-medium">
-                    {title}
-                    <span>&rarr;</span>
-                </h2>
-            </a>
+            <h2 class="uppercase font-sans text-xl font-medium">
+                {title}
+                <span>&rarr;</span>
+            </h2>
         </li>
     </ul>
-</div>
+</a>
