@@ -1,4 +1,7 @@
 ---
+import Footer from "../components/Footer.astro";
+import ListItem from "../components/ListItem.astro";
+import Titulo from "../components/Titulo.astro";
 import SecondaryLayout from "../layouts/SecondaryLayout.astro";
 ---
 
@@ -7,4 +10,24 @@ import SecondaryLayout from "../layouts/SecondaryLayout.astro";
         <i class="fa-solid fa-shop text-6xl" style="color: #FDA769"></i>
         <h2 class="text-4xl font-bold uppercase font-sans">A comprar</h2>
     </div>
+    <Titulo title="Supermercados"/>
+    <ListItem title="super mami" href="https://goo.gl/maps/S6nXAFXdEwG7piXr8"/>
+    <ListItem title="almacor" href="https://goo.gl/maps/sssS7PPdg5BRppHcA"/>
+
+    <Titulo title="carnicerías"/>
+    <ListItem title="carnicería salsipuedes" href="https://goo.gl/maps/pG4sThsNf7D7TSF67"/>
+    <ListItem title="el vikingo" href="https://goo.gl/maps/qYPXSz4wCNV66aJj7"/>
+
+    <Titulo title="verdulerías"/>
+    <ListItem title="la boutique" href="https://goo.gl/maps/1jphLguvMVjiKGa7A"/>
+
+    <Titulo title="almacenes"/>
+    <ListItem title="mary chango" href="https://goo.gl/maps/7uTybbbMzsyJY8UR6"/>
+    <ListItem title="kiosco azul" href="https://goo.gl/maps/2CeUBUCY5zDuT3Zp9"/>
+
+    <Titulo title="panaderías"/>
+    <ListItem title="pier angelo" href="https://goo.gl/maps/QS42qLhJ3fTfCmNKA"/>
+
+    <Footer/>
+
 </SecondaryLayout>

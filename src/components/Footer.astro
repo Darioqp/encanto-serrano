@@ -1,0 +1,16 @@
+<footer class="text-center bg-gray-200 h-24 flex items-center justify-center flex-col font-sans mt-6">
+    <p>
+        &copy; <span id="copyright-year"></span> Encanto Serrano.
+    </p>
+    <p>Todos los derechos reservados.</p>
+    <p>Sitio web creado por <a class="font-bold hover:text-black" href="https://www.linkedin.com/in/dariokupec/">Dario Kupec</a></p>
+</footer>
+
+<script>
+    const copyrightYearElement = document.getElementById("copyright-year");
+
+    if (copyrightYearElement) {
+        const currentYear = new Date().getFullYear();
+        copyrightYearElement.textContent = currentYear.toString();
+    }
+</script>
